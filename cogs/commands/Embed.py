@@ -167,7 +167,7 @@ class Embed(commands.Cog):
                 tit = await ctx.bot.wait_for("message", timeout=30, check=chk)
                 chnl = tit.channel_mentions[0]
                 await chnl.send(embed=embed)
-                await ctx.send(embed=discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+                await ctx.send(embed=discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
                                                    description="Sent the embed message to the mentioned channel",
                                                    color=0x000000))
             except asyncio.TimeoutError:
@@ -199,6 +199,6 @@ class Embed(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out support or DM me.
 """

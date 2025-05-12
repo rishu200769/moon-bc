@@ -321,7 +321,7 @@ class Music(commands.Cog):
                 try:
                     ended = discord.Embed(description="Bot has been disconnected due to inactivity (being idle in Voice Channel) for more than 2 minutes." , color=0xFF0000)
                     ended.set_author(name="Inactive Timeout", icon_url=self.client.user.avatar.url)
-                    ended.set_footer(text="Thanks for choosing Olympus!")
+                    ended.set_footer(text="Thanks for choosing Moon!")
                     support = Button(label='Support',
                                  style=discord.ButtonStyle.link,
                         url=f'https://discord.gg/odx')
@@ -981,6 +981,6 @@ class Music(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out Community or DM me.
 """

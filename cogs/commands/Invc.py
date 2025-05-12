@@ -44,7 +44,7 @@ class Invcrole(commands.Cog):
                     return
             await db.execute('INSERT INTO vcroles (guild_id, role_id) VALUES (?, ?)', (ctx.guild.id, role.id))
             await db.commit()
-            embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+            embed = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
                                   description=f"VC role {role.mention} added for this guild.", color=0x000000)
             await ctx.reply(embed=embed)
 
@@ -63,7 +63,7 @@ class Invcrole(commands.Cog):
                     return
             await db.execute('DELETE FROM vcroles WHERE guild_id = ? AND role_id = ?', (ctx.guild.id, role.id))
             await db.commit()
-            embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+            embed = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
                                   description=f"VC role {role.mention} removed for this guild.", color=0x000000)
             await ctx.send(embed=embed)
 
@@ -137,6 +137,6 @@ class Invcrole(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out Community or DM me.
 """

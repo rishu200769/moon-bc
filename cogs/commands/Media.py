@@ -63,7 +63,7 @@ class Media(commands.Cog):
             await db.commit()
 
         embed = discord.Embed(
-            title="<:olympus_tick:1227866641027698792> Success",
+            title="<a:MOONTICK:1371195413364998206> Success",
             description=f"Successfully set {channel.mention} as the media-only channel.",
             color=0x000000
         )
@@ -92,7 +92,7 @@ class Media(commands.Cog):
             await db.commit()
 
         embed = discord.Embed(
-            title="<:olympus_tick:1227866641027698792> Success",
+            title="<a:MOONTICK:1371195413364998206> Success",
             description="Successfully removed the media-only channel.",
             color=0x000000
         )
@@ -167,7 +167,7 @@ class Media(commands.Cog):
             await db.commit()
 
         embed = discord.Embed(
-            title="<:olympus_tick:1227866641027698792> Success",
+            title="<a:MOONTICK:1371195413364998206> Success",
             description=f"{user.mention} has been added to the bypass list.",
             color=0x000000
         )
@@ -195,7 +195,7 @@ class Media(commands.Cog):
             await db.commit()
 
         embed = discord.Embed(
-            title="<:olympus_tick:1227866641027698792> Success",
+            title="<a:MOONTICK:1371195413364998206> Success",
             description=f"{user.mention} has been removed from the bypass list.",
             color=0x000000
         )
@@ -292,6 +292,6 @@ class Media(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out Community or DM me.
 """

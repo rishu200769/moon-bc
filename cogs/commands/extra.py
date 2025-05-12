@@ -30,7 +30,7 @@ def datetime_to_seconds(thing: datetime.datetime):
     round(time.time()) +
     (current_time - thing.replace(tzinfo=None)).total_seconds())
 
-tick = "<:olympus_tick:1227866641027698792>"
+tick = "<a:MOONTICK:1371195413364998206:>"
 cross = "<:olympus_cross:1227866668152393789>"
 
 
@@ -404,7 +404,7 @@ class Extra(commands.Cog):
 **Name:** {member}
 **ID:** {member.id}
 **Nickname:** {nickk}
-**Bot?:** {'<:olympus_tick:1227866641027698792> Yes' if member.bot else '<:olympus_cross:1227866668152393789> No'}
+**Bot?:** {'<a:MOONTICK:1371195413364998206:> Yes' if member.bot else '<:olympus_cross:1227866668152393789> No'}
 **Badges:** {badges}
 **Account Created:** <t:{round(member.created_at.timestamp())}:R>
 **Server Joined:** {joinedat}
@@ -1039,6 +1039,6 @@ class Extra(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out support or DM me.
 """

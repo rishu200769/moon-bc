@@ -343,7 +343,7 @@ class Fun(commands.Cog):
           )
 
           embed.set_footer(
-            text=f'Made by Olympus Development™',
+            text=f'Made by Moon Development™',
             icon_url=self.bot.user.avatar
           )
 
@@ -404,7 +404,7 @@ class Fun(commands.Cog):
   async def fake_ban(self, ctx, user: discord.Member):
     embed = discord.Embed(
       title="Successfully Banned!",
-      description=f"<:olympus_tick:1227866641027698792> | {user.mention} has been successfully banned",
+      description=f"<a:MOONTICK:1371195413364998206> | {user.mention} has been successfully banned",
       color=0x000000
     )
     embed.set_footer(
@@ -683,6 +683,6 @@ class Fun(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out Community or DM me.
 """

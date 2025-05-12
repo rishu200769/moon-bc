@@ -2,7 +2,7 @@
  <br>
   <a href="https://github.com/sonujana26"><img src="https://cdn.discordapp.com/avatars/1144179659735572640/a_f061e6472786781e23bac32fa8d0a667.png?size=1024?size=128"></a>
   <br>
-  Olympus the Ultimate Discord Bot
+  Moon the Ultimate Discord Bot
   <br>
 </h1>
 
@@ -44,7 +44,7 @@
   <a href="#credits">Credits</a>
 </p>
 
-## 🔗 [Invite the Public Bot (Olympus) by clicking here!](https://discord.com/oauth2/authorize?client_id=1144179659735572640&permissions=2113268958&scope=bot)
+## 🔗 [Invite the Public Bot (Moon) by clicking here!](https://discord.com/oauth2/authorize?client_id=1144179659735572640&permissions=2113268958&scope=bot)
 
 ## About
 

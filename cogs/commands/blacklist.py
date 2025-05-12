@@ -219,7 +219,7 @@ class Blacklist(commands.Cog):
             return
 
         await self.add_word_to_blacklist(guild_id, word.lower())
-        embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
             description=f"Added `{word}` to the blacklist.",
             color=discord.Color.from_rgb(0, 0, 0)
         )
@@ -241,7 +241,7 @@ class Blacklist(commands.Cog):
             return
 
         await self.remove_word_from_blacklist(guild_id, word.lower())
-        embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
             description=f"Removed `{word}` from the blacklist.",
             color=discord.Color.from_rgb(0, 0, 0)
         )
@@ -266,7 +266,7 @@ class Blacklist(commands.Cog):
 
         await self.remove_all_words_from_blacklist(guild_id)
 
-        embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
             description="Cleared all blacklisted words.",
             color=discord.Color.from_rgb(0, 0, 0)
         )
@@ -333,7 +333,7 @@ class Blacklist(commands.Cog):
                 await ctx.reply(embed=embed)
                 return
             await self.add_user_to_bypass(guild_id, target.id)
-            embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+            embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                 description=f"Added `{target}` to the bypass list.",
                 color=discord.Color.from_rgb(0, 0, 0)
             )
@@ -351,7 +351,7 @@ class Blacklist(commands.Cog):
                 await ctx.reply(embed=embed)
                 return
             await self.add_role_to_bypass(guild_id, target.id)
-            embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+            embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                 description=f"Added `{target}` to the bypass list.",
                 color=discord.Color.from_rgb(0, 0, 0)
             )
@@ -375,7 +375,7 @@ class Blacklist(commands.Cog):
                 await ctx.reply(embed=embed)
                 return
             await self.remove_user_from_bypass(guild_id, target.id)
-            embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+            embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                 description=f"Removed `{target}` from the bypass list.",
                 color=discord.Color.from_rgb(0, 0, 0)
             )
@@ -390,7 +390,7 @@ class Blacklist(commands.Cog):
                 await ctx.reply(embed=embed)
                 return
             await self.remove_role_from_bypass(guild_id, target.id)
-            embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+            embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                 description=f"Removed `{target}` from the bypass list.",
                 color=discord.Color.from_rgb(0, 0, 0)
             )

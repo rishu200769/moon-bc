@@ -113,7 +113,7 @@ class Stats(commands.Cog):
           f"Total Songs Played: **[{self.total_songs_played}](https://discord.gg/odx)**",
     inline=False
         )
-        embed.set_footer(text="Powered by Olympus Development™", icon_url=self.bot.user.display_avatar.url)
+        embed.set_footer(text="Powered by Moon Development™", icon_url=self.bot.user.display_avatar.url)
 
         view = View()
         
@@ -134,7 +134,7 @@ class Stats(commands.Cog):
 
                 system_embed.add_field(name="<:memory_:1292508839132008533> Memory Info", value=f"• Total Memory: **{memory_info.total / (1024 ** 2):,.2f} MB**\n• Memory Left: **{memory_info.available / (1024 ** 2):,.2f} MB**\n• Heap Total: **{memory_info.used / (1024 ** 2):,.2f} MB**", inline=False)
                 system_embed.add_field(name="<:cpu:1292508956882767975> CPU Info", value=f"• CPU: **{psutil.cpu_freq().max}' GHz**\n• CPU Usage: **{psutil.cpu_percent()}%**\n• CPU Cores: **{psutil.cpu_count(logical=False)}**\n• CPU Speed: **{cpu_info.current:.2f} MHz**", inline=False)
-                system_embed.set_footer(text="Powered by Olympus Development™", icon_url=self.bot.user.display_avatar.url)
+                system_embed.set_footer(text="Powered by Moon Development™", icon_url=self.bot.user.display_avatar.url)
                 
                 await interaction.response.edit_message(embed=system_embed, view=view)
         system_button.callback = system_button_callback
@@ -164,7 +164,7 @@ class Stats(commands.Cog):
                 ping_embed.add_field(name="<:pong:1218740734463840348> Bot Latency", value=f"{round(sh.latency * 800)} ms", inline=False)
                 ping_embed.add_field(name="<:websocket:1292512590379094139> Database Latency", value=f"{db_latency} ms", inline=False)
                 ping_embed.add_field(name="<:database:1292512419016347762> Websocket Latency", value=f"{wsping} ms", inline=False)
-                ping_embed.set_footer(text="Powered by Olympus Development™", icon_url=self.bot.user.display_avatar.url)
+                ping_embed.set_footer(text="Powered by Moon Development™", icon_url=self.bot.user.display_avatar.url)
                 await interaction.response.edit_message(embed=ping_embed, view=view)
         ping_button.callback = ping_button_callback
         view.add_item(ping_button)
@@ -179,9 +179,9 @@ class Stats(commands.Cog):
                 team_embed.add_field(name="**<:olympus_developer:1250290657256538196> Bot Developer(s)**", value="> **[Sonu!?](https://discord.com/users/213347081799073793)** (Lead Developer)", inline=False)
                 team_embed.add_field(name="**<:olympus_general:1222789674687397930> Web Developer(s)**", value="> **[Love](https://discord.com/users/773755998665441280)** (Lead Web Developer)", inline=False)
                 team_embed.add_field(name="**<:olympus_utility:1222787342474154094> Tester(s)**", value="> **[! Lucifer](https://discord.com/users/1113040686686674987)**", inline=False)
-                team_embed.add_field(name="**<:olympus_team:1243399230651895809> Team(s)**", value="> **[Olympus Development™](https://discord.gg/odx)**", inline=False)
+                team_embed.add_field(name="**<:olympus_team:1243399230651895809> Team(s)**", value="> **[Moon Development™](https://discord.gg/odx)**", inline=False)
                 team_embed.add_field(name="**<:olympus_partner:1228228301089144976> Partner(s)**", value="> **[Endercloud](https://endercloud.in/)**", inline=False)
-                team_embed.set_footer(text="Powered by Olympus Development™", icon_url=self.bot.user.display_avatar.url)
+                team_embed.set_footer(text="Powered by Moon Development™", icon_url=self.bot.user.display_avatar.url)
                 await interaction.response.edit_message(embed=team_embed, view=view)
         team_button.callback = team_button_callback
         view.add_item(team_button)"""
@@ -205,6 +205,6 @@ class Stats(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out Community or DM me.
 """

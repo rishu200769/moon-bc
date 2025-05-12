@@ -28,7 +28,7 @@ class OnOrOff(BasicView):
         super().__init__(ctx, timeout=None)
         self.value = None
 
-    @discord.ui.button(label="DM me", emoji="<:olympus_tick:1227866641027698792>", custom_id='Yes', style=discord.ButtonStyle.green)
+    @discord.ui.button(label="DM me", emoji="<a:MOONTICK:1371195413364998206:>", custom_id='Yes', style=discord.ButtonStyle.green)
     async def dare(self, interaction: discord.Interaction, button: discord.ui.Button):
         self.value = 'Yes'
         await interaction.response.defer()
@@ -192,7 +192,7 @@ class afk(commands.Cog):
             await db.commit()
 
             await test.delete()
-            af = discord.Embed(title='<:olympus_tick:1227866641027698792> Success', 
+            af = discord.Embed(title='<a:MOONTICK:1371195413364998206:> Success', 
                  description=f'{ctx.author.mention}, You are now marked as AFK due to: **{reason}**', 
                  color=0x000000)
             await ctx.reply(embed=af)
@@ -200,6 +200,6 @@ class afk(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out Community or DM me.
 """

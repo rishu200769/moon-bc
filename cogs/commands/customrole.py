@@ -74,12 +74,12 @@ class Customrole(commands.Cog):
                             if role:
                                 if role not in member.roles:
                                     await self.add_role2(role=role_id, member=member)
-                                    embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+                                    embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                                         description=f"**Given** <@&{role.id}> To {member.mention}",
                                         color=0x000000)
                                 else:
                                     await self.remove_role2(role=role_id, member=member)
-                                    embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+                                    embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                                         description=f"**Removed** <@&{role.id}> From {member.mention}",
                                         color=0x000000)
                                 await context.reply(embed=embed)
@@ -178,7 +178,7 @@ class Customrole(commands.Cog):
     async def staff(self, context: Context, role: discord.Role) -> None:
         if context.author == context.guild.owner or context.author.top_role.position > context.guild.me.top_role.position:
             await self.update_role_data(context.guild.id, 'staff', role.id)
-            embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+            embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                 description=f"Added {role.mention} to `Staff` Role\n\n__**How to Use?**__\nUse `staff <user>` Command to **Add {role.mention}** role to User & use again to the same user to **Remove role**. ",
                 color=0x000000)
             await context.reply(embed=embed)
@@ -199,7 +199,7 @@ class Customrole(commands.Cog):
     async def girl(self, context: Context, role: discord.Role) -> None:
         if context.author == context.guild.owner or context.author.top_role.position > context.guild.me.top_role.position:
             await self.update_role_data(context.guild.id, 'girl', role.id)
-            embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+            embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                 description=f"Added {role.mention} to `Girl` Role\n\n__**How to Use?**__\nUse `girl <user>` Command to **Add {role.mention}** role to User & use again to the same user to **Remove role**.  ",
                 color=0x000000)
             await context.reply(embed=embed)
@@ -283,7 +283,7 @@ class Customrole(commands.Cog):
     async def req_role(self, context: Context, role: discord.Role) -> None:
         if context.author == context.guild.owner or context.author.top_role.position > context.guild.me.top_role.position:
             await self.update_role_data(context.guild.id, 'reqrole', role.id)
-            embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+            embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                 color=0x000000,
                 description=f"Added {role.mention} for Required role to run custom role commands in {context.guild.name}"
             )
@@ -367,7 +367,7 @@ class Customrole(commands.Cog):
                              (context.guild.id, name, role.id))
             await db.commit()
 
-        embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
             description=f"Custom role command `{name}` created to assign the role {role.mention}.\n\n__**How to Use?**__\nUse `{name} <user>` Command to Assign/Remove {role.mention} role to User.\n> This will work for the users having `Manage Roles` permissions.",
             color=0x000000
         )
@@ -399,7 +399,7 @@ class Customrole(commands.Cog):
             await db.execute("DELETE FROM custom_roles WHERE guild_id = ? AND name = ?", (context.guild.id, name))
             await db.commit()
 
-        embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
             description=f"Custom role command `{name}` has been deleted.",
             color=0x000000
         )
@@ -476,7 +476,7 @@ class Customrole(commands.Cog):
                     await db.commit()
                     embed = discord.Embed(
             title="Custom Role Configuration Reset",
-            description=f"Deleted All Custom Role commands <:olympus_tick:1227866641027698792>\n\n**Removed Roles:**\n" + "\n".join(removed_roles) if removed_roles else "No roles were previously set.",
+            description=f"Deleted All Custom Role commands <a:MOONTICK:1371195413364998206:>\n\n**Removed Roles:**\n" + "\n".join(removed_roles) if removed_roles else "No roles were previously set.",
             color=0x000000
         )
                     
@@ -564,14 +564,14 @@ class Customrole(commands.Cog):
                 if role in member.roles:
                     await self.remove_role(role_id=role_id, member=member)
                     await message.channel.send(embed=discord.Embed(
-                        title="<:olympus_tick:1227866641027698792> Success",
+                        title="<a:MOONTICK:1371195413364998206:> Success",
                         description=f"**Removed** the role {role.mention} from {member.mention}.",
                         color=0x000000
                     ))
                 else:
                     await self.add_role(role_id=role_id, member=member)
                     await message.channel.send(embed=discord.Embed(
-                        title="<:olympus_tick:1227866641027698792> Success",
+                        title="<a:MOONTICK:1371195413364998206:> Success",
                         description=f"**Added** the role {role.mention} to {member.mention}.",
                         color=0x000000
                     ))
@@ -640,6 +640,6 @@ class Customrole(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out support or DM me.
 """

@@ -100,7 +100,7 @@ class AutoReaction(commands.Cog):
             await db.commit()
 
         embed = discord.Embed(
-            title="<:olympus_tick:1227866641027698792> Trigger Added",
+            title="<a:MOONTICK:1371195413364998206:> Trigger Added",
             description=f"Successfully added trigger '{trigger}' with emojis {', '.join(emoji_list)}.",
             color=0x000000
         )
@@ -131,7 +131,7 @@ class AutoReaction(commands.Cog):
             await db.commit()
 
         embed = discord.Embed(
-            title="<:olympus_tick:1227866641027698792> Trigger Removed",
+            title="<a:MOONTICK:1371195413364998206:> Trigger Removed",
             description=f"Successfully removed trigger '{trigger}'.",
             color=0x000000
         )
@@ -190,7 +190,7 @@ class AutoReaction(commands.Cog):
             await db.commit()
 
         embed = discord.Embed(
-            title="<:olympus_tick:1227866641027698792> All Triggers Reset",
+            title="<a:MOONTICK:1371195413364998206:> All Triggers Reset",
             description="Successfully removed all auto-reaction triggers.",
             color=0x000000
         )
@@ -204,6 +204,6 @@ async def setup(bot):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out support or DM me.
 """

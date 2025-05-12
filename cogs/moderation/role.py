@@ -269,7 +269,7 @@ class Role(commands.Cog):
     if ctx.author == ctx.guild.owner or ctx.author.top_role.position > ctx.guild.me.top_role.position:
         button = Button(label="Confirm",
                         style=discord.ButtonStyle.green,
-                        emoji="<:olympus_tick:1227866641027698792>")
+                        emoji="<a:MOONTICK:1371195413364998206>")
         button1 = Button(label="Cancel",
                          style=discord.ButtonStyle.red,
                          emoji="<:olympus_cross:1227866668152393789>")
@@ -291,7 +291,7 @@ class Role(commands.Cog):
                                 print(e)
 
                     await interaction.channel.send(
-                        content=f"<:olympus_tick:1227866641027698792> | Successfully assigned {role.mention} to {count} human(s).")
+                        content=f"<a:MOONTICK:1371195413364998206> | Successfully assigned {role.mention} to {count} human(s).")
                 else:
                     await interaction.response.edit_message(
                         content="<:olympus_notify:1227866804630720565> I am missing the required permissions. Please grant the necessary permissions and try again.",
@@ -352,7 +352,7 @@ class Role(commands.Cog):
     if ctx.author == ctx.guild.owner or ctx.author.top_role.position > ctx.guild.me.top_role.position:
         button = Button(label="Confirm",
                         style=discord.ButtonStyle.green,
-                        emoji="<:olympus_tick:1227866641027698792>")
+                        emoji="<a:MOONTICK:1371195413364998206>")
         button1 = Button(label="Cancel",
                          style=discord.ButtonStyle.red,
                          emoji="<:olympus_cross:1227866668152393789>")
@@ -374,7 +374,7 @@ class Role(commands.Cog):
                                 print(e)
 
                     await interaction.channel.send(
-                        content=f"<:olympus_tick:1227866641027698792> | Successfully added {role.mention} to {count} bot(s).")
+                        content=f"<a:MOONTICK:1371195413364998206> | Successfully added {role.mention} to {count} bot(s).")
                 else:
                     await interaction.response.edit_message(
                         content="I am missing the required permission. Please grant the necessary permissions and try again.",
@@ -435,7 +435,7 @@ class Role(commands.Cog):
     if ctx.author == ctx.guild.owner or ctx.author.top_role.position > ctx.guild.me.top_role.position:
         button = Button(label="Confirm",
                         style=discord.ButtonStyle.green,
-                        emoji="<:olympus_tick:1227866641027698792>")
+                        emoji="<a:MOONTICK:1371195413364998206>")
         button1 = Button(label="Cancel",
                          style=discord.ButtonStyle.red,
                          emoji="<:olympus_cross:1227866668152393789>")
@@ -457,7 +457,7 @@ class Role(commands.Cog):
                                 print(e)
 
                     await interaction.channel.send(
-                        content=f"<:olympus_tick:1227866641027698792> | Successfully added {role.mention} to {count} unverified member(s).")
+                        content=f"<a:MOONTICK:1371195413364998206> | Successfully added {role.mention} to {count} unverified member(s).")
                 else:
                     await interaction.response.edit_message(
                         content="I am missing the required permission. Please grant the necessary permissions and try again.",
@@ -513,7 +513,7 @@ class Role(commands.Cog):
     if ctx.author == ctx.guild.owner or ctx.author.top_role.position > ctx.guild.me.top_role.position:
         button = Button(label="Confirm",
                         style=discord.ButtonStyle.green,
-                        emoji="<:olympus_tick:1227866641027698792>")
+                        emoji="<a:MOONTICK:1371195413364998206>")
         button1 = Button(label="Cancel",
                          style=discord.ButtonStyle.red,
                          emoji="<:olympus_cross:1227866668152393789>")
@@ -534,7 +534,7 @@ class Role(commands.Cog):
                             print(e)
 
                     await interaction.channel.send(
-                        content=f"<:olympus_tick:1227866641027698792> | Successfully added {role.mention} to {count} member(s).")
+                        content=f"<a:MOONTICK:1371195413364998206> | Successfully added {role.mention} to {count} member(s).")
                 else:
                     await interaction.response.edit_message(
                         content="I am missing the required permission. Please grant the necessary permissions and try again.",
@@ -608,7 +608,7 @@ class Role(commands.Cog):
     if ctx.author == ctx.guild.owner or ctx.author.top_role.position > ctx.guild.me.top_role.position:
         button = Button(label="Confirm",
                         style=discord.ButtonStyle.green,
-                        emoji="<:olympus_tick:1227866641027698792>")
+                        emoji="<a:MOONTICK:1371195413364998206>")
         button1 = Button(label="Cancel",
                          style=discord.ButtonStyle.red,
                          emoji="<:olympus_cross:1227866668152393789>")
@@ -630,7 +630,7 @@ class Role(commands.Cog):
                                 print(e)
 
                     await interaction.channel.send(
-                        content=f"<:olympus_tick:1227866641027698792> | Successfully removed {role.mention} from {count} human(s).")
+                        content=f"<a:MOONTICK:1371195413364998206> | Successfully removed {role.mention} from {count} human(s).")
                 else:
                     await interaction.response.edit_message(
                         content="I am missing the required permission. Please grant the necessary permissions and try again.",
@@ -690,7 +690,7 @@ class Role(commands.Cog):
     if ctx.author == ctx.guild.owner or ctx.author.top_role.position > ctx.guild.me.top_role.position:
         button = Button(label="Confirm",
                         style=discord.ButtonStyle.green,
-                        emoji="<:olympus_tick:1227866641027698792>")
+                        emoji="<a:MOONTICK:1371195413364998206>")
         button1 = Button(label="Cancel",
                          style=discord.ButtonStyle.red,
                          emoji="<:olympus_cross:1227866668152393789>")
@@ -712,7 +712,7 @@ class Role(commands.Cog):
                                 print(e)
 
                     await interaction.channel.send(
-                        content=f"<:olympus_tick:1227866641027698792> | Successfully removed {role.mention} from {count} bot(s).")
+                        content=f"<a:MOONTICK:1371195413364998206> | Successfully removed {role.mention} from {count} bot(s).")
                 else:
                     await interaction.response.edit_message(
                         content="I am missing the required permission. Please grant the necessary permissions and try again.",
@@ -772,7 +772,7 @@ class Role(commands.Cog):
     if ctx.author == ctx.guild.owner or ctx.author.top_role.position > ctx.guild.me.top_role.position:
         button = Button(label="Confirm",
                         style=discord.ButtonStyle.green,
-                        emoji="<:olympus_tick:1227866641027698792>")
+                        emoji="<a:MOONTICK:1371195413364998206>")
         button1 = Button(label="Cancel",
                          style=discord.ButtonStyle.red,
                          emoji="<:olympus_cross:1227866668152393789>")
@@ -795,7 +795,7 @@ class Role(commands.Cog):
                                 print(e)
 
                     await interaction.channel.send(
-                        content=f"<:olympus_tick:1227866641027698792> | Successfully removed {role.mention} from {removed_count} member(s).")
+                        content=f"<a:MOONTICK:1371195413364998206> | Successfully removed {role.mention} from {removed_count} member(s).")
                 else:
                     await interaction.response.edit_message(
                         content="I am missing the required permission. Please grant the necessary permissions and try again.",
@@ -852,7 +852,7 @@ class Role(commands.Cog):
     if ctx.author == ctx.guild.owner or ctx.author.top_role.position > ctx.guild.me.top_role.position:
         button = Button(label="Yes",
                         style=discord.ButtonStyle.green,
-                        emoji="<:olympus_tick:1227866641027698792>")
+                        emoji="<a:MOONTICK:1371195413364998206>")
         button1 = Button(label="No",
                          style=discord.ButtonStyle.red,
                          emoji="<:olympus_cross:1227866668152393789>")
@@ -875,7 +875,7 @@ class Role(commands.Cog):
                                 print(e)
 
                     await interaction.channel.send(
-                        content=f"<:olympus_tick:1227866641027698792> | Successfully removed {role.mention} from {count} unverified member(s).")
+                        content=f"<a:MOONTICK:1371195413364998206> | Successfully removed {role.mention} from {count} unverified member(s).")
                 else:
                     await interaction.response.edit_message(
                         content="I am missing the required permission. Please grant the necessary permissions and try again.",
@@ -927,6 +927,6 @@ class Role(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out Community or DM me.
 """

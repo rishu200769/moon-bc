@@ -45,7 +45,7 @@ class Voice(commands.Cog):
         ch = member.voice.channel.mention
         await member.edit(voice_channel=None,
                           reason=f"Disconnected by {str(ctx.author)}")
-        embed2 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed2 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
 
             description=f"{str(member)} has been disconnected from {ch}",
             color=self.color)
@@ -82,7 +82,7 @@ class Voice(commands.Cog):
                 voice_channel=None,
                 reason=f"Disconnect All Command Executed By: {str(ctx.author)}")
             count += 1
-        embed2 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed2 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
 
             description=f"Disconnected {count} members from {ch}",
             color=self.color)
@@ -136,7 +136,7 @@ class Voice(commands.Cog):
 
         await member.edit(mute=True)
         embed = discord.Embed(
-            title="<:olympus_tick:1227866641027698792> Success",
+            title="<a:MOONTICK:1371195413364998206> Success",
             description=f"{str(member)} has been muted in {member.voice.channel.mention}.",
             color=self.color
         )
@@ -177,7 +177,7 @@ class Voice(commands.Cog):
             embed2.set_thumbnail(url="https://cdn.discordapp.com/emojis/1279464563150032991.png")
             return await ctx.reply(embed=embed2)
         ch = member.voice.channel.mention
-        embed3 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed3 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
 
             description=f"{str(member)} has been unmuted in {ch}",
             color=self.color)
@@ -216,7 +216,7 @@ class Voice(commands.Cog):
                     reason=
                     f"voice muteall Command Executed by {str(ctx.author)}")
                 count += 1
-        embed2 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed2 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
                                description=f"Muted {count} members in {ch}",
                                color=self.color)
         embed2.set_footer(text=f"Requested by: {ctx.author}",
@@ -253,7 +253,7 @@ class Voice(commands.Cog):
                     reason=
                     f"Voice unmuteall Command Executed by: {str(ctx.author)}")
                 count += 1
-        embed2 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed2 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
                                description=f"Unmuted {count} members in {ch}",
                                color=self.color)
         embed2.set_footer(text=f"Requested by: {ctx.author}",
@@ -292,7 +292,7 @@ class Voice(commands.Cog):
             embed2.set_thumbnail(url="https://cdn.discordapp.com/emojis/1279464563150032991.png")
             return await ctx.reply(embed=embed2)
         ch = member.voice.channel.mention
-        embed3 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed3 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
 
             description=f"{str(member)} has been Deafened in {ch}",
             color=self.color)
@@ -333,7 +333,7 @@ class Voice(commands.Cog):
             embed2.set_thumbnail(url="https://cdn.discordapp.com/emojis/1279464563150032991.png")
             return await ctx.reply(embed=embed2)
         ch = member.voice.channel.mention
-        embed3 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed3 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
 
             description=f"{str(member)} has been undeafened in {ch}",
             color=self.color)
@@ -373,7 +373,7 @@ class Voice(commands.Cog):
                     reason=
                     f"voice deafenall Command Executed by {str(ctx.author)}")
                 count += 1
-        embed2 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed2 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
                                description=f"Deafened {count} members in {ch}",
                                color=self.color)
         embed2.set_footer(text=f"Requested by: {ctx.author}",
@@ -410,7 +410,7 @@ class Voice(commands.Cog):
                     reason=
                     f"Voice undeafenall Command Executed by: {str(ctx.author)}")
                 count += 1
-        embed2 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed2 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
 
             description=f"Undeafened {count} members in {ch}",
             color=self.color)
@@ -449,7 +449,7 @@ class Voice(commands.Cog):
                     reason=
                     f"voice moveall Command Executed by: {str(ctx.author)}")
                 count += 1
-            embed2 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+            embed2 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
 
                 description=f"{count} Members moved from {ch} to {nch}",
                 color=self.color)
@@ -500,7 +500,7 @@ class Voice(commands.Cog):
                         count += 1
                     except:
                         pass
-        embed2 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed2 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
                                description=f"Moved {count} members to {channel.mention}",
                                color=self.color)
         embed2.set_footer(text=f"Requested by: {ctx.author}",
@@ -541,7 +541,7 @@ class Voice(commands.Cog):
             return await ctx.reply(embed=embed)
         await member.edit(voice_channel=channel,
                           reason=f"Moved by {str(ctx.author)}")
-        embed2 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed2 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
 
             description=f"{str(member)} has been moved to {channel.mention}",
             color=self.color)
@@ -593,7 +593,7 @@ class Voice(commands.Cog):
             return await ctx.reply(embed=embed)
         await member.edit(voice_channel=ctx.author.voice.channel,
                           reason=f"Pulled by {str(ctx.author)}")
-        embed2 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed2 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
 
             description=f"{str(member)} has been pulled to your voice channel.",
             color=self.color)
@@ -626,7 +626,7 @@ class Voice(commands.Cog):
         await ctx.author.voice.channel.set_permissions(ctx.guild.default_role,
                                                        connect=False,
                                                        reason=f"Locked by {str(ctx.author)}")
-        embed2 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed2 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
 
             description=f"{ch} has been locked.",
             color=self.color)
@@ -659,7 +659,7 @@ class Voice(commands.Cog):
         await ctx.author.voice.channel.set_permissions(ctx.guild.default_role,
                                                        connect=True,
                                                        reason=f"Unlocked by {str(ctx.author)}")
-        embed2 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed2 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
 
             description=f"{ch} has been unlocked.",
             color=self.color)
@@ -693,7 +693,7 @@ class Voice(commands.Cog):
                                                        connect=False,
                                                        view_channel=False,
                                                        reason=f"Made private by {str(ctx.author)}")
-        embed2 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed2 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
 
             description=f"{ch} has been made private.",
             color=self.color)
@@ -727,7 +727,7 @@ class Voice(commands.Cog):
                                                        connect=True,
                                                        view_channel=True,
                                                        reason=f"Made public by {str(ctx.author)}")
-        embed2 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed2 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
 
             description=f"{ch} has been made public.",
             color=self.color)
@@ -739,6 +739,6 @@ class Voice(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out Community or DM me.
 """

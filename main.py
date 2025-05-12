@@ -101,7 +101,7 @@ async def on_command_completion(context: commands.Context) -> None:
                     inline=False)
 
                 embed.timestamp = discord.utils.utcnow()
-                embed.set_footer(text="Olympus Development™ ❤️",
+                embed.set_footer(text="Moon Development™ ❤️",
                                  icon_url=client.user.display_avatar.url)
 
                 
@@ -125,7 +125,7 @@ async def on_command_completion(context: commands.Context) -> None:
                     name="<:right:1244660443323306118> Command Executed By :",
                     value=f"{context.author} | ID: [{context.author.id}](https://discord.com/users/{context.author.id})",
                     inline=False)
-                embed1.set_footer(text=f"Powered by Olympus Development™",
+                embed1.set_footer(f"Powered by Moon Development™",
                                   icon_url=client.user.display_avatar.url)
                 print("Sending embed1 to webhook...")
                 await webhook.send(embed=embed1)
@@ -143,7 +143,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return f"© Olympus Development 2024"
+    return f"© Moob Development 2024"
 
 
 def run():

@@ -88,7 +88,7 @@ class Unwhitelist(commands.Cog):
         )
         await self.db.commit()
 
-        embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
             color=0x000000,
             description=f"User <@!{member.id}> has been removed from the whitelist."
         )
@@ -98,6 +98,6 @@ class Unwhitelist(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out Community or DM me.
 """

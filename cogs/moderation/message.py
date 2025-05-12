@@ -54,7 +54,7 @@ async def do_removal(ctx, limit, predicate, *, before=None, after=None):
 
   spammers = Counter(m.author.display_name for m in deleted)
   deleted = len(deleted)
-  messages = [f'<:olympus_tick:1227866641027698792> | {deleted} message{" was" if deleted == 1 else "s were"} removed.']
+  messages = [f'<a:MOONTICK:1371195413364998206> | {deleted} message{" was" if deleted == 1 else "s were"} removed.']
   if deleted:
       messages.append("")
       spammers = sorted(spammers.items(), key=lambda t: t[1], reverse=True)
@@ -63,7 +63,7 @@ async def do_removal(ctx, limit, predicate, *, before=None, after=None):
   to_send = "\n".join(messages)
 
   if len(to_send) > 2000:
-      await ctx.send(f"<:olympus_tick:1227866641027698792> | Successfully removed {deleted} messages.", delete_after=7)
+      await ctx.send(f"<a:MOONTICK:1371195413364998206> | Successfully removed {deleted} messages.", delete_after=7)
   else:
       await ctx.send(to_send, delete_after=7)
     
@@ -213,7 +213,7 @@ class Message(commands.Cog):
                 total_reactions += sum(r.count for r in message.reactions)
                 await message.clear_reactions()
 
-        await ctx.success(f"<:olympus_tick:1227866641027698792> | Successfully removed {total_reactions} reactions.")
+        await ctx.success(f"<a:MOONTICK:1371195413364998206> | Successfully removed {total_reactions} reactions.")
             
 
 
@@ -252,6 +252,6 @@ class Message(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out Community or DM me.
 """

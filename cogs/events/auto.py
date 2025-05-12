@@ -21,7 +21,7 @@ class Autorole(Cog):
                 )
                 embed.set_thumbnail(url=entry.user.avatar.url if entry.user.avatar else entry.user.default_avatar.url)
                 embed.set_author(name=f"{guild.name}", icon_url=guild.me.display_avatar.url)
-                embed.set_footer(text="Powered by Olympus Development™", icon_url="https://cdn.discordapp.com/icons/699587669059174461/f689b4366447d5a23eda8d0ec749c1ba.png")
+                embed.set_footer(text="Powered by Moon Development™", icon_url="https://cdn.discordapp.com/icons/699587669059174461/f689b4366447d5a23eda8d0ec749c1ba.png")
                 website_button = Button(label='Website', style=discord.ButtonStyle.link, url='https://olyumpus.vercel.app/')
                 support_button = Button(label='Support', style=discord.ButtonStyle.link, url='https://discord.gg/odx')
                 vote_button = Button(label='Vote for Me', style=discord.ButtonStyle.link, url=f'https://top.gg/bot/{self.bot.user.id}/vote')

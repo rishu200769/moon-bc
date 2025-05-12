@@ -122,7 +122,7 @@ class Nightmode(commands.Cog):
                     ''', (str(ctx.guild.id), str(role.id), int(admin_permissions.value)))
             await self.db.commit()
 
-        await ctx.send(embed=discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        await ctx.send(embed=discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
             color=self.color,
             description='Nightmode enabled! Dangerous Permissions Disabled For Manageable Roles.'
         ))
@@ -174,7 +174,7 @@ class Nightmode(commands.Cog):
                     await cursor.execute('DELETE FROM Nightmode WHERE guildId = ? AND roleId = ?', (str(ctx.guild.id), role_id))
             await self.db.commit()
 
-        await ctx.send(embed=discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        await ctx.send(embed=discord.Embed(title="<a:MOONTICK:1371195413364998206> Success",
             color=self.color,
             description='Nightmode disabled! Restored Permissions For Manageable Roles.'
         ))
@@ -182,6 +182,6 @@ class Nightmode(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out Community or DM me.
 """

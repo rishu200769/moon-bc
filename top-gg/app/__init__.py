@@ -115,7 +115,7 @@ async def topgg():
                     {"name": "🏆 Current Streak:", "value": f"{streak}", "inline": True},
                 ],
                 "footer": {
-                    "text": f"Voter ID: {user_id} | Olympus Development™ | {footer_time}",
+                    "text": f"Voter ID: {user_id} | Moon Development™ | {footer_time}",
                     "icon_url": "https://cdn.discordapp.com/icons/699587669059174461/f689b4366447d5a23eda8d0ec749c1ba.png?size=1024"
                 },
                 "thumbnail": {

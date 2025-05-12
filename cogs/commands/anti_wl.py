@@ -166,7 +166,7 @@ class Whitelist(commands.Cog):
         embed.add_field(name="**Executor**", value=f"<@!{ctx.author.id}>", inline=True)
         embed.add_field(name="**Target**", value=f"<@!{member.id}>", inline=True)
         embed.set_thumbnail(url=self.bot.user.avatar.url)
-        embed.set_footer(text=f"Developed by Olympus Development™")
+        embed.set_footer(text=f"Developed by Moon Development™")
 
         msg = await ctx.send(embed=embed, view=view)
 
@@ -208,7 +208,7 @@ class Whitelist(commands.Cog):
                 embed.add_field(name="**Executor**", value=f"<@!{ctx.author.id}>", inline=True)
                 embed.add_field(name="**Target**", value=f"<@!{member.id}>", inline=True)
                 embed.set_thumbnail(url=self.bot.user.avatar.url)
-                embed.set_footer(text=f"Developed by Olympus Development™")
+                embed.set_footer(text=f"Developed by Moon Development™")
 
                 await interaction.response.edit_message(embed=embed, view=None)
             else:
@@ -252,7 +252,7 @@ class Whitelist(commands.Cog):
                 embed.add_field(name="**Executor**", value=f"<@!{ctx.author.id}>", inline=True)
                 embed.add_field(name="**Target**", value=f"<@!{member.id}>", inline=True)
                 embed.set_thumbnail(url=self.bot.user.avatar.url)
-                embed.set_footer(text=f"Developed by Olympus Development™")
+                embed.set_footer(text=f"Developed by Moon Development™")
 
                 await interaction.response.edit_message(embed=embed, view=None)
         except TimeoutError:
@@ -398,7 +398,7 @@ class Whitelist(commands.Cog):
 
         await self.db.execute("DELETE FROM whitelisted_users WHERE guild_id = ?", (ctx.guild.id,))
         await self.db.commit()
-        embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+        embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
             color=0x000000,
             description=f"Removed all whitelisted members from {ctx.guild.name}"
         )
@@ -407,6 +407,6 @@ class Whitelist(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out Community or DM me.
 """

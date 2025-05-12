@@ -57,7 +57,7 @@ class Block(commands.Cog):
         await db.execute('INSERT INTO user_blacklist (user_id) VALUES (?)', (user.id,))
         await db.commit()
         embed = discord.Embed(
-          title="<:olympus_tick:1227866641027698792> User Blacklisted",
+          title="<a:MOONTICK:1371195413364998206:> User Blacklisted",
           description=f"{user.mention} has been added to the blacklist.",
           color=0x000000
         )
@@ -79,7 +79,7 @@ class Block(commands.Cog):
         await db.execute('DELETE FROM user_blacklist WHERE user_id = ?', (user.id,))
         await db.commit()
         embed = discord.Embed(
-          title="<:olympus_tick:1227866641027698792> User Unblacklisted",
+          title="<a:MOONTICK:1371195413364998206:> User Unblacklisted",
           description=f"{user.mention} has been removed from the blacklist.",
           color=0x000000
         )
@@ -145,7 +145,7 @@ class Block(commands.Cog):
         await db.execute('INSERT INTO guild_blacklist (guild_id) VALUES (?)', (guild_id,))
         await db.commit()
         embed = discord.Embed(
-          title="<:olympus_tick:1227866641027698792> Guild Blacklisted",
+          title="<a:MOONTICK:1371195413364998206:> Guild Blacklisted",
           description=f"Guild with ID `{guild_id}` has been added to the blacklist.",
           color=0x000000
         )
@@ -167,7 +167,7 @@ class Block(commands.Cog):
         await db.execute('DELETE FROM guild_blacklist WHERE guild_id = ?', (guild_id,))
         await db.commit()
         embed = discord.Embed(
-          title="<:olympus_tick:1227866641027698792> Guild Unblacklisted",
+          title="<a:MOONTICK:1371195413364998206:> Guild Unblacklisted",
           description=f"Guild with ID `{guild_id}` has been removed from the blacklist.",
           color=0x000000
         )
@@ -213,6 +213,6 @@ class Block(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out support or DM me.
 """

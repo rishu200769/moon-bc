@@ -282,10 +282,10 @@ class Automod(commands.Cog):
 
             try:
                 for channel in interaction.guild.channels:
-                    if channel.name == "olympus-automod":
-                        await interaction.response.send_message(f"A logging channel with the name \"olympus-automod\" already exists.", ephemeral=True)
+                    if channel.name == "moon-automod":
+                        await interaction.response.send_message(f"A logging channel with the name \"moon-automod\" already exists.", ephemeral=True)
                         return
-                log_channel = await interaction.guild.create_text_channel("olympus-automod", overwrites=overwrites)
+                log_channel = await interaction.guild.create_text_channel("moon-automod", overwrites=overwrites)
                 guild_id = interaction.guild.id
 
                 async with aiosqlite.connect("db/automod.db") as db:
@@ -463,7 +463,7 @@ class Automod(commands.Cog):
                     pass
 
                     
-            success = discord.Embed(title="<:olympus_tick:1227866641027698792> Channel Whitelisted", description=f"The channel {channel.mention} has been added to the ignore list \n\n➜ Use `{ctx.prefix}automod ignore show` to view the ignore list.", color=0x000000)
+            success = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Channel Whitelisted", description=f"The channel {channel.mention} has been added to the ignore list \n\n➜ Use `{ctx.prefix}automod ignore show` to view the ignore list.", color=0x000000)
             success.set_thumbnail(url=self.bot.user.avatar.url)
             success.set_footer(text=f"“{ctx.command.qualified_name}” Command executed by {ctx.author}",
                    icon_url=ctx.author.avatar.url if ctx.author.avatar else ctx.author.default_avatar.url)
@@ -531,7 +531,7 @@ class Automod(commands.Cog):
                     pass
                     
                     
-            success = discord.Embed(title="<:olympus_tick:1227866641027698792> Role Whitelisted", description=f"The role {role.mention} has been added to the ignore list \n\n➜ Use `{ctx.prefix}automod ignore show` to view the ignore list.", color=0x000000)
+            success = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Role Whitelisted", description=f"The role {role.mention} has been added to the ignore list \n\n➜ Use `{ctx.prefix}automod ignore show` to view the ignore list.", color=0x000000)
             success.set_thumbnail(url=self.bot.user.avatar.url)
             success.set_footer(text=f"“{ctx.command.qualified_name}” Command executed by {ctx.author}",
                    icon_url=ctx.author.avatar.url if ctx.author.avatar else ctx.author.default_avatar.url)
@@ -630,7 +630,7 @@ class Automod(commands.Cog):
         async with aiosqlite.connect("db/automod.db") as db:
             await db.execute("DELETE FROM automod_ignored WHERE guild_id = ?", (guild_id,))
             await db.commit()
-        embed=discord.Embed(title=f"Automod Settings for {ctx.guild.name}", description=f"** <:olympus_tick:1227866641027698792> | All ignored channels and roles have been reset!**\n\nTo view current Automod settings use `{ctx.prefix}automod config`", color=0x000000)
+        embed=discord.Embed(title=f"Automod Settings for {ctx.guild.name}", description=f"** <a:MOONTICK:1371195413364998206:> | All ignored channels and roles have been reset!**\n\nTo view current Automod settings use `{ctx.prefix}automod config`", color=0x000000)
         embed.set_thumbnail(url=self.bot.user.avatar.url)
         embed.set_footer(text=f"“{ctx.command.qualified_name}” Command executed by {ctx.author}",
                icon_url=ctx.author.avatar.url if ctx.author.avatar else ctx.author.default_avatar.url)
@@ -690,7 +690,7 @@ class Automod(commands.Cog):
             await db.commit()
 
         if result.rowcount > 0:
-            embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success", description=f"{channel.mention} has been removed from the automod ignore list.", color=0x000000)
+            embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success", description=f"{channel.mention} has been removed from the automod ignore list.", color=0x000000)
             embed.set_footer(text=f"“{ctx.command.qualified_name}” Command executed by {ctx.author}",
                        icon_url=ctx.author.avatar.url if ctx.author.avatar else ctx.author.default_avatar.url)
             await ctx.send(embed=embed)
@@ -746,7 +746,7 @@ class Automod(commands.Cog):
             await db.commit()
 
         if result.rowcount > 0:
-            embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success", description=f"{role.mention} has been removed from the automod ignore list.", color=0x000000)
+            embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success", description=f"{role.mention} has been removed from the automod ignore list.", color=0x000000)
             embed.set_footer(text=f"“{ctx.command.qualified_name}” Command executed by {ctx.author}",
                        icon_url=ctx.author.avatar.url if ctx.author.avatar else ctx.author.default_avatar.url)
             await ctx.send(embed=embed)
@@ -821,7 +821,7 @@ class Automod(commands.Cog):
                         pass
 
 
-            embed.title = "<:olympus_tick:1227866641027698792> Automod Disabled"
+            embed.title = "<a:MOONTICK:1371195413364998206:> Automod Disabled"
             embed.description = f"Automod has been successfully disabled for **{ctx.guild.name}.** \nAll settings, punishments, and logs have been removed.\n\nCurrent Status:<:disabled:1204107662392827904> Disabled\n➜ To Re-enable use `{ctx.prefix}automod enable`."
             embed.color = 0x000000
             embed.set_thumbnail(url=self.bot.user.avatar.url)
@@ -921,7 +921,7 @@ class Automod(commands.Cog):
         async with aiosqlite.connect("db/automod.db") as db:
             await db.execute("INSERT OR REPLACE INTO automod_logging (guild_id, log_channel) VALUES (?, ?)", (guild_id, channel.id))
             await db.commit()
-            embed=discord.Embed(title=f"Automod Settings for {ctx.guild.name}", description=f"**<:olympus_tick:1227866641027698792> | Automoderation Logging channel set to {channel.mention}.**\n\n➜ Use `{ctx.prefix}automod config` to view current Automod settings.", color=0x000000)
+            embed=discord.Embed(title=f"Automod Settings for {ctx.guild.name}", description=f"**<a:MOONTICK:1371195413364998206:> | Automoderation Logging channel set to {channel.mention}.**\n\n➜ Use `{ctx.prefix}automod config` to view current Automod settings.", color=0x000000)
             embed.set_footer(text=f"“{ctx.command.qualified_name}” Command executed by {ctx.author}",
                    icon_url=ctx.author.avatar.url if ctx.author.avatar else ctx.author.default_avatar.url)
         await ctx.send(embed=embed)
@@ -941,6 +941,6 @@ class Automod(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out Community or DM me.
 """

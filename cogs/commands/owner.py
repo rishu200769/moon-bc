@@ -124,7 +124,7 @@ async def do_removal(ctx, limit, predicate, *, before=None, after=None):
 
   spammers = Counter(m.author.display_name for m in deleted)
   deleted = len(deleted)
-  messages = [f'<:olympus_tick:1227866641027698792> | {deleted} message{" was" if deleted == 1 else "s were"} removed.']
+  messages = [f'<a:MOONTICK:1371195413364998206> | {deleted} message{" was" if deleted == 1 else "s were"} removed.']
   if deleted:
       messages.append("")
       spammers = sorted(spammers.items(), key=lambda t: t[1], reverse=True)
@@ -133,7 +133,7 @@ async def do_removal(ctx, limit, predicate, *, before=None, after=None):
   to_send = "\n".join(messages)
 
   if len(to_send) > 2000:
-      await ctx.send(f"<:olympus_tick:1227866641027698792> | Successfully removed {deleted} messages.", delete_after=3)
+      await ctx.send(f"<a:MOONTICK:1371195413364998206> | Successfully removed {deleted} messages.", delete_after=3)
   else:
       await ctx.send(to_send, delete_after=3)
 
@@ -191,7 +191,7 @@ class Owner(commands.Cog):
             async with aiosqlite.connect(self.db_path) as db:
                 await db.execute('INSERT OR IGNORE INTO staff (id) VALUES (?)', (user.id,))
                 await db.commit()
-            sonu2 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success", description=f"Added {user} to the staff list.", color=0x000000)
+            sonu2 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success", description=f"Added {user} to the staff list.", color=0x000000)
             await ctx.reply(embed=sonu2, mention_author=False)
 
     @commands.command(name="staff_remove", aliases=["staffremove", "removestaff"], help="Removes a user from the staff list.")
@@ -205,7 +205,7 @@ class Owner(commands.Cog):
             async with aiosqlite.connect(self.db_path) as db:
                 await db.execute('DELETE FROM staff WHERE id = ?', (user.id,))
                 await db.commit()
-                sonu2 = discord.Embed(title="<:olympus_tick:1227866641027698792> Success", description=f"Removed {user} from the staff list.", color=0x000000)
+                sonu2 = discord.Embed(title="<a:MOONTICK:1371195413364998206> Success", description=f"Removed {user} from the staff list.", color=0x000000)
             await ctx.reply(embed=sonu2, mention_author=False)
 
     @commands.command(name="staff_list", aliases=["stafflist", "liststaff", "staffs"], help="Lists all staff members.")
@@ -411,7 +411,7 @@ class Owner(commands.Cog):
         """ DM the user of your choice """
         try:
             await user.send(message)
-            await ctx.send(f"<:olympus_tick:1227866641027698792> | Successfully Sent a DM to **{user}**")
+            await ctx.send(f"<a:MOONTICK:1371195413364998206> | Successfully Sent a DM to **{user}**")
         except discord.Forbidden:
             await ctx.send("This user might be having DMs blocked or it's a bot account...")           
 
@@ -431,9 +431,9 @@ class Owner(commands.Cog):
         try:
             await ctx.guild.me.edit(nick=name)
             if name:
-                await ctx.send(f"<:olympus_tick:1227866641027698792> | Successfully changed nickname to **{name}**")
+                await ctx.send(f"<a:MOONTICK:1371195413364998206> | Successfully changed nickname to **{name}**")
             else:
-                await ctx.send("<:olympus_tick:1227866641027698792> | Successfully removed nickname")
+                await ctx.send("<a:MOONTICK:1371195413364998206> | Successfully removed nickname")
         except Exception as err:
             await ctx.send(err) 
 
@@ -448,7 +448,7 @@ class Owner(commands.Cog):
                 await member.ban(reason=reason)
                 embed = discord.Embed(
                     title="Successfully Banned",
-                    description=f"<:olympus_tick:1227866641027698792> | **{member.name}** has been successfully banned from {ctx.guild.name} by the Bot Owner.",
+                    description=f"<a:MOONTICK:1371195413364998206> | **{member.name}** has been successfully banned from {ctx.guild.name} by the Bot Owner.",
                     color=0x000000)
                 await ctx.reply(embed=embed, mention_author=False, delete_after=3)
                 await ctx.message.delete()
@@ -481,7 +481,7 @@ class Owner(commands.Cog):
                 await ctx.guild.unban(user, reason=reason)
                 embed = discord.Embed(
                     title="Successfully Unbanned",
-                    description=f"<:olympus_tick:1227866641027698792> | **{user.name}** has been successfully unbanned from {ctx.guild.name} by the Bot Owner.",
+                    description=f"<a:MOONTICK:1371195413364998206> | **{user.name}** has been successfully unbanned from {ctx.guild.name} by the Bot Owner.",
                     color=0x000000
                 )
                 await ctx.reply(embed=embed, mention_author=False)

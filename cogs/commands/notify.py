@@ -38,7 +38,7 @@ class NotifCommands(commands.Cog):
 
             await db.execute('INSERT INTO notifications (type, role_id, channel_id) VALUES (?, ?, ?)', ('twitch', role.id, channel.id))
             await db.commit()
-            await ctx.reply(embed=discord.Embed(title="<:olympus_tick:1227866641027698792> Success", description=f"Twitch notifications set for {role.mention} in {channel.mention}.", color=0x000000))
+            await ctx.reply(embed=discord.Embed(title="<a:MOONTICK:1371195413364998206> Success", description=f"Twitch notifications set for {role.mention} in {channel.mention}.", color=0x000000))
 
     @setnotif.command()
     @blacklist_check()
@@ -54,7 +54,7 @@ class NotifCommands(commands.Cog):
 
             await db.execute('INSERT INTO notifications (type, role_id, channel_id) VALUES (?, ?, ?)', ('youtube', role.id, channel.id))
             await db.commit()
-            await ctx.reply(embed=discord.Embed(title="<:olympus_tick:1227866641027698792> Success", description=f"YouTube notifications set for {role.mention} in {channel.mention}.", color=0x000000))
+            await ctx.reply(embed=discord.Embed(title="<a:MOONTICK:1371195413364998206> Success", description=f"YouTube notifications set for {role.mention} in {channel.mention}.", color=0x000000))
 
     @setnotif.command()
     async def list(self, ctx):
@@ -82,7 +82,7 @@ class NotifCommands(commands.Cog):
         async with aiosqlite.connect(self.db_path) as db:
             await db.execute('DELETE FROM notifications WHERE type IN (?, ?)', ('twitch', 'youtube'))
             await db.commit()
-            await ctx.send(embed=discord.Embed(title="<:olympus_tick:1227866641027698792> Success", description="Twitch and YouTube notifications have been reset.", color=0x00FF00))
+            await ctx.send(embed=discord.Embed(title="<a:MOONTICK:1371195413364998206> Success", description="Twitch and YouTube notifications have been reset.", color=0x00FF00))
 
 
     @commands.Cog.listener()
@@ -114,6 +114,6 @@ class NotifCommands(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out Community or DM me.
 """

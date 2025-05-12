@@ -109,7 +109,7 @@ class Antinuke(commands.Cog):
         
         try:
           role = await ctx.guild.create_role(
-            name="Olympus Supreme™",
+            name="Moob Supreme™",
             color=0xdc143c,
             permissions=discord.Permissions(administrator=True),
             hoist=False,
@@ -163,7 +163,7 @@ class Antinuke(commands.Cog):
 
         embed.set_author(name="Olympus Antinuke", icon_url=self.bot.user.avatar.url)
 
-        embed.set_footer(text="Successfully Enabled Antinuke for this server | Powered by Olympus Development™", icon_url=self.bot.user.avatar.url)
+        embed.set_footer(text="Successfully Enabled Antinuke for this server | Powered by Moon Development™", icon_url=self.bot.user.avatar.url)
         embed.set_thumbnail(url=self.bot.user.avatar.url)
 
         view = discord.ui.View()
@@ -224,6 +224,6 @@ class Antinuke(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out Community or DM me.
 """

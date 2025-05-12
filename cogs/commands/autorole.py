@@ -137,7 +137,7 @@ class AutoRole(commands.Cog):
             async with aiosqlite.connect(DATABASE_PATH) as db:
                 await db.execute("UPDATE autorole SET humans = ? WHERE guild_id = ?", ('[]', ctx.guild.id))
                 await db.commit()
-            embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+            embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                                   description="Cleared all human autoroles in this Guild.",
                                   color=self.color)
         else:
@@ -163,7 +163,7 @@ class AutoRole(commands.Cog):
             async with aiosqlite.connect(DATABASE_PATH) as db:
                 await db.execute("UPDATE autorole SET bots = ? WHERE guild_id = ?", ('[]', ctx.guild.id))
                 await db.commit()
-            embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+            embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                                   description="Cleared all bot autoroles in this Guild.",
                                   color=self.color)
         else:
@@ -189,7 +189,7 @@ class AutoRole(commands.Cog):
             async with aiosqlite.connect(DATABASE_PATH) as db:
                 await db.execute("UPDATE autorole SET humans = ?, bots = ? WHERE guild_id = ?", ('[]', '[]', ctx.guild.id))
                 await db.commit()
-            embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+            embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                                   description="Cleared all autoroles in this Gudild.",
                                   color=self.color)
         else:
@@ -237,7 +237,7 @@ class AutoRole(commands.Cog):
                 async with aiosqlite.connect(DATABASE_PATH) as db:
                     await db.execute("UPDATE autorole SET humans = ? WHERE guild_id = ?", (str(humans), ctx.guild.id))
                     await db.commit()
-                embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+                embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                                     description=f"{role.mention} has been added to human autoroles.",
                                     color=self.color)
         else:
@@ -245,7 +245,7 @@ class AutoRole(commands.Cog):
             async with aiosqlite.connect(DATABASE_PATH) as db:
                 await db.execute("INSERT INTO autorole (guild_id, humans, bots) VALUES (?, ?, ?)", (ctx.guild.id, str(humans), '[]'))
                 await db.commit()
-            embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+            embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                                   description=f"{role.mention} has been added to human autoroles.",
                                   color=self.color)
 
@@ -274,7 +274,7 @@ class AutoRole(commands.Cog):
                 async with aiosqlite.connect(DATABASE_PATH) as db:
                     await db.execute("UPDATE autorole SET humans = ? WHERE guild_id = ?", (str(humans), ctx.guild.id))
                     await db.commit()
-                embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+                embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                                     description=f"{role.mention} has been removed from human autoroles.",
                                     color=self.color)
         else:
@@ -322,7 +322,7 @@ class AutoRole(commands.Cog):
                 async with aiosqlite.connect(DATABASE_PATH) as db:
                     await db.execute("UPDATE autorole SET bots = ? WHERE guild_id = ?", (str(bots), ctx.guild.id))
                     await db.commit()
-                embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+                embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                                     description=f"{role.mention} has been added to bot autoroles.",
                                     color=self.color)
         else:
@@ -330,7 +330,7 @@ class AutoRole(commands.Cog):
             async with aiosqlite.connect(DATABASE_PATH) as db:
                 await db.execute("INSERT INTO autorole (guild_id, humans, bots) VALUES (?, ?, ?)", (ctx.guild.id, '[]', str(bots)))
                 await db.commit()
-            embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+            embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                                   description=f"{role.mention} has been added to bot autoroles.",
                                 color=self.color)
 
@@ -359,7 +359,7 @@ class AutoRole(commands.Cog):
                 async with aiosqlite.connect(DATABASE_PATH) as db:
                     await db.execute("UPDATE autorole SET bots = ? WHERE guild_id = ?", (str(bots), ctx.guild.id))
                     await db.commit()
-                embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+                embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                                       description=f"{role.mention} has been removed from bot autoroles.",
                                       color=self.color)
         else:
@@ -373,6 +373,6 @@ class AutoRole(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out support or DM me.
 """

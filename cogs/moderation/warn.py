@@ -158,7 +158,7 @@ class Warn(commands.Cog):
     async def clearwarns(self, ctx, user: discord.Member):
         try:
             await self.reset_warns(ctx.guild.id, user.id)
-            embed = discord.Embed(description=f"<:olympus_tick:1227866641027698792> | All warnings have been cleared for **{user}** in this guild.", color=self.color)
+            embed = discord.Embed(description=f"<a:MOONTICK:1371195413364998206> | All warnings have been cleared for **{user}** in this guild.", color=self.color)
             embed.set_author(name=f"Warnings Cleared", icon_url=self.get_user_avatar(user))
             embed.set_footer(text=f"Requested by {ctx.author}", icon_url=self.get_user_avatar(ctx.author))
             embed.timestamp = discord.utils.utcnow()
@@ -172,6 +172,6 @@ class Warn(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out Community or DM me.
 """

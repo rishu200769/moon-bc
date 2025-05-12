@@ -444,7 +444,7 @@ class Welcomer(commands.Cog):
                 await db.commit()
 
             embed.color = discord.Color(0x000000)
-            embed.title = "<:olympus_tick:1227866641027698792> Success"
+            embed.title = "<a:MOONTICK:1371195413364998206> Success"
             embed.description = "Welcome message configuration has been successfully reset."
             await interaction.message.edit(embed=embed, view=None)
 
@@ -936,6 +936,6 @@ class Welcomer(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out Community or DM me.
 """

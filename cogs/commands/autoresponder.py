@@ -60,7 +60,7 @@ class AutoResponder(commands.Cog):
 
             await db.execute("INSERT INTO autoresponses (guild_id, name, message) VALUES (?, ?, ?)", (ctx.guild.id, name_lower, message))
             await db.commit()
-            await ctx.reply(embed=discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+            await ctx.reply(embed=discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                 description=f"Created autoresponder `{name}` in {ctx.guild.name}",
                 color=0x000000
             ))
@@ -82,7 +82,7 @@ class AutoResponder(commands.Cog):
 
             await db.execute("DELETE FROM autoresponses WHERE guild_id = ? AND LOWER(name) = ?", (ctx.guild.id, name_lower))
             await db.commit()
-            await ctx.reply(embed=discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+            await ctx.reply(embed=discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                 description=f"Deleted autoresponder `{name}` in {ctx.guild.name}",
                 color=0x000000
             ))
@@ -104,7 +104,7 @@ class AutoResponder(commands.Cog):
 
             await db.execute("UPDATE autoresponses SET message = ? WHERE guild_id = ? AND LOWER(name) = ?", (message, ctx.guild.id, name_lower))
             await db.commit()
-            await ctx.reply(embed=discord.Embed(title="<:olympus_tick:1227866641027698792> Success",
+            await ctx.reply(embed=discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success",
                 description=f"Edited autoresponder `{name}` in {ctx.guild.name}",
                 color=0x000000
             ))
@@ -150,6 +150,6 @@ async def setup(bot):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out support or DM me.
 """

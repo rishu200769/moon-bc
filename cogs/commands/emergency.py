@@ -132,7 +132,7 @@ class Emergency(commands.Cog):
         
         if roles_added:
             description = "\n".join([f"{role.mention}" for role in roles_added])
-            embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success", description=f"The following roles with dangerous permissions have been added to the **emergency list**:\n{description}", color=0x000000)
+            embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success", description=f"The following roles with dangerous permissions have been added to the **emergency list**:\n{description}", color=0x000000)
             embed.set_footer(text="Roles having greater or equal position than my top role is not added in the emergency list.", icon_url=self.bot.user.display_avatar.url)
         else:
             embed = discord.Embed(title="<:olympus_cross:1227866668152393789> Error", description="No new roles with dangerous permissions were found.", color=0x000000)
@@ -156,7 +156,7 @@ class Emergency(commands.Cog):
             await db.execute("DELETE FROM emergency_roles WHERE guild_id = ?", (ctx.guild.id,))
             await db.commit()
 
-        embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success", description="Emergency mode has been disabled, and all emergency roles have been cleared.", color=0x000000)
+        embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success", description="Emergency mode has been disabled, and all emergency roles have been cleared.", color=0x000000)
         await ctx.reply(embed=embed)
 
     
@@ -199,7 +199,7 @@ class Emergency(commands.Cog):
             await db.execute("INSERT INTO authorised_users (guild_id, user_id) VALUES (?, ?)", (ctx.guild.id, member.id))
             await db.commit()
 
-        embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success", description=f"**{member.display_name}** has been authorised to use `emergency-situation` command.", color=0x000000)
+        embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success", description=f"**{member.display_name}** has been authorised to use `emergency-situation` command.", color=0x000000)
         await ctx.reply(embed=embed)
 
     @authorise.command(name="remove", help="Removes a user from the authorised group")
@@ -222,7 +222,7 @@ class Emergency(commands.Cog):
             await db.execute("DELETE FROM authorised_users WHERE guild_id = ? AND user_id = ?", (ctx.guild.id, member.id))
             await db.commit()
 
-        embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success", description=f"**{member.display_name}** has been removed from the authorised list and can no more use `emergency-situation` command.", color=0x000000)
+        embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success", description=f"**{member.display_name}** has been removed from the authorised list and can no more use `emergency-situation` command.", color=0x000000)
         await ctx.reply(embed=embed)
 
     @authorise.command(name="list", aliases=["view", "config"], help="Lists all authorised users for emergency actions.")
@@ -292,7 +292,7 @@ class Emergency(commands.Cog):
             await db.execute("INSERT INTO emergency_roles (guild_id, role_id) VALUES (?, ?)", (ctx.guild.id, role.id))
             await db.commit()
 
-        embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success", description=f"**{role.name}** has been **added** to the emergency list.", color=0x000000)
+        embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success", description=f"**{role.name}** has been **added** to the emergency list.", color=0x000000)
         await ctx.reply(embed=embed)
 
     @role.command(name="remove", help="Removes a role from the emergency role list.")
@@ -315,7 +315,7 @@ class Emergency(commands.Cog):
             await db.execute("DELETE FROM emergency_roles WHERE guild_id = ? AND role_id = ?", (ctx.guild.id, role.id))
             await db.commit()
 
-        embed = discord.Embed(title="<:olympus_tick:1227866641027698792> Success", description=f"**{role.name}** has been removed from the emergency list.", color=0x000000)
+        embed = discord.Embed(title="<a:MOONTICK:1371195413364998206:> Success", description=f"**{role.name}** has been removed from the emergency list.", color=0x000000)
         await ctx.reply(embed=embed)
 
     @role.command(name="list", aliases=["view", "config"], help="Lists all roles added to the emergency list.")
@@ -580,6 +580,6 @@ class Emergency(commands.Cog):
 """
 @Author: Sonu Jana
     + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
+    + Community: https://discord.gg/odx (Moon Development)
     + for any queries reach out Community or DM me.
 """
